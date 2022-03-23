@@ -21,7 +21,7 @@ public class PlayerInteraction : MonoBehaviour
 		if (currentInteractObjScript.interType == InteractableObject.InteractionType.nothing)
 		{ currentInteractObjScript.Nothing(); }
 
-		else if(currentInteractObjScript.interType == InteractableObject.InteractionType.nothing)
+		else if(currentInteractObjScript.interType == InteractableObject.InteractionType.info)
 		{ currentInteractObjScript.InfoMessage(); }
 	}
 

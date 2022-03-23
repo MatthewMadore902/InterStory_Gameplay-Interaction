@@ -22,11 +22,11 @@ public class InteractableObject : MonoBehaviour
 
 	public void Start()
 	{
-		infoText = GameObject.Find("InfoText").GetComponent<Text>();
+		infoText = GameObject.Find("infoText").GetComponent<Text>();
 	}
 	public void Nothing()
 	{
-		Debug.LogWarning("Objct " + this.gameObject.name + " has no type set");
+		Debug.LogWarning("Object " + this.gameObject.name + " has no type set");
 	}
 	public void InfoMessage()
 	{
