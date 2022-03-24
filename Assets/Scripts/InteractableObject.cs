@@ -20,6 +20,10 @@ public class InteractableObject : MonoBehaviour
 	public string infoMessage;
 	private Text infoText;
 
+	[Header("Dialouge Text")]
+	[TextArea]
+	public string sentance;
+
 	public void Start()
 	{
 		infoText = GameObject.Find("infoText").GetComponent<Text>();
@@ -28,8 +32,23 @@ public class InteractableObject : MonoBehaviour
 	{
 		Debug.LogWarning("Object " + this.gameObject.name + " has no type set");
 	}
+	public void PickUp()
+	{
+		gameObject.SetActive(false);
+	}
 	public void InfoMessage()
 	{
+		StartCoroutine(ShowInfo(infoMessage, 2.5f));
 		infoText.text = infoMessage;
+	}
+	public void Dialogue()
+	{
+		GameObject.Find("DialogueUI").SetActive(true);
+	}
+	IEnumerator ShowInfo(string message, float delay)
+	{
+		infoText.text = message;
+		yield return new WaitForSeconds(delay);
+		infoText.text = null;
 	}
 }
