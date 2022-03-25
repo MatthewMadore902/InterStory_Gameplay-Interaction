@@ -157,7 +157,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interType: 3
-  infoMessage: nothing to say
+  infoMessage: 
+  sentance:
+  - Hello...
+  - This is a test!!
+  - If you see this one it means it works =)!!
+  dialogueBox: {fileID: 0}
+  disabled: 1
 --- !u!95 &758580454354466628
 Animator:
   serializedVersion: 3

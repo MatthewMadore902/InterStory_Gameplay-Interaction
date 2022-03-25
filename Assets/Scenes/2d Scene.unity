@@ -370,7 +370,7 @@ GameObject:
   - component: {fileID: 195960788}
   m_Layer: 0
   m_Name: DialogueUI
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21605,7 +21605,7 @@ GameObject:
   - component: {fileID: 596801783}
   m_Layer: 5
   m_Name: Panel
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21617,7 +21617,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 596801781}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -21626,8 +21626,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -30, y: -193}
-  m_SizeDelta: {x: -439.3365, y: -495.3836}
+  m_AnchoredPosition: {x: -19.300995, y: -179.4873}
+  m_SizeDelta: {x: -117.0127, y: -406.0254}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &596801783
 MonoBehaviour:
@@ -21758,7 +21758,7 @@ GameObject:
   - component: {fileID: 872145537}
   m_Layer: 0
   m_Name: DialogueManager
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29215,7 +29215,7 @@ GameObject:
   - component: {fileID: 1508980744}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29316,7 +29316,7 @@ GameObject:
   - component: {fileID: 1646225475}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29337,8 +29337,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -26.772, y: -179.4873}
-  m_SizeDelta: {x: 626.4561, y: 114.9746}
+  m_AnchoredPosition: {x: -24.103392, y: -166.14449}
+  m_SizeDelta: {x: 606.1749, y: 64.8055}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1646225475
 MonoBehaviour:
@@ -29373,7 +29373,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: '
+
+'
 --- !u!222 &1646225476
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29396,7 +29398,7 @@ GameObject:
   - component: {fileID: 1706718753}
   m_Layer: 5
   m_Name: Button
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29418,7 +29420,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 206.46, y: -251.97}
+  m_AnchoredPosition: {x: 205.8, y: -213.55}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1706718753
@@ -29464,7 +29466,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1706718754}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 872145537}
+        m_TargetAssemblyTypeName: DialougeManager, Assembly-CSharp
+        m_MethodName: DisplayNextSentance
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1706718754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29582,7 +29596,7 @@ GameObject:
   - component: {fileID: 1896234547}
   m_Layer: 5
   m_Name: Text
-  m_TagString: Untagged
+  m_TagString: InterObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29639,7 +29653,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Next
 --- !u!222 &1896234548
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -29963,8 +29977,18 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 680682141173375297, guid: d7d17571e219ac54585b1a3971537e4e,
         type: 3}
-      propertyPath: sentance
-      value: Test
+      propertyPath: dialogue
+      value: 
+      objectReference: {fileID: 872145537}
+    - target: {fileID: 680682141173375297, guid: d7d17571e219ac54585b1a3971537e4e,
+        type: 3}
+      propertyPath: dialogueBox
+      value: 
+      objectReference: {fileID: 195960787}
+    - target: {fileID: 680682141173375297, guid: d7d17571e219ac54585b1a3971537e4e,
+        type: 3}
+      propertyPath: infoMessage
+      value: didnt work
       objectReference: {fileID: 0}
     - target: {fileID: 3635535805199745896, guid: d7d17571e219ac54585b1a3971537e4e,
         type: 3}

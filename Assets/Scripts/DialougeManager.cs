@@ -9,39 +9,41 @@ public class DialougeManager : MonoBehaviour
     public Text dialogueText;
     public GameObject Player;
     public Animator aniamtor;
-    private Queue<string> dialogue;
+    private Queue<string> sentences;
 
     public void Start()
     {
-        dialogue = new Queue<string>();
+        sentences = new Queue<string>();
     }
     
     public void StartDialogue(string[] sentance)
     {
-        dialogue.Clear();
+        sentences.Clear();
         dialogueUI.SetActive(true);
 
         Player.GetComponent<PlayerMovement_2D>().enabled = false;
         Player.GetComponent<PlayerInteraction>().enabled = false;
         aniamtor.SetFloat("Speed", 0);
-        Player.GetComponent<Rigidbody>().velocity = Vector2.zero;
+        Player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 
+        Debug.Log("Start");
         foreach (string currentLine in sentance)
         {
-            dialogue.Enqueue(currentLine);
+            sentences.Enqueue(currentLine);
 
         }
         DisplayNextSentance();
     }
     public void DisplayNextSentance()
     {
-        if (dialogue.Count == 0)
+        if (sentences.Count == 0)
         {
             EndDialouge();
             return;
         }
-        string currentLine = dialogue.Dequeue();
+        string currentLine = sentences.Dequeue();
         dialogueText.text = currentLine;
+        Debug.Log("Next");
     }
     void EndDialouge()
     {

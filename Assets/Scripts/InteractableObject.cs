@@ -21,8 +21,13 @@ public class InteractableObject : MonoBehaviour
 	private Text infoText;
 
 	[Header("Dialouge Text")]
-	[TextArea]
-	public string sentance;
+	[TextArea(3, 10)]
+	public string[] sentance;
+
+
+	public GameObject dialogueBox;
+	public DialougeManager dialogue;
+	public bool disabled;
 
 	public void Start()
 	{
@@ -43,7 +48,8 @@ public class InteractableObject : MonoBehaviour
 	}
 	public void Dialogue()
 	{
-		GameObject.Find("DialogueUI").SetActive(true);
+		FindObjectOfType<DialougeManager>().StartDialogue(sentance);
+		dialogueBox.SetActive(true);
 	}
 	IEnumerator ShowInfo(string message, float delay)
 	{
